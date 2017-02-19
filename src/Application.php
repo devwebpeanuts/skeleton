@@ -24,7 +24,7 @@ class Application extends \Onyx\Application
 
     private function configureTwig(): void
     {
-        $this['twig.path.manager']->addPath(array(
+        $this['view.manager']->addPath(array(
             $this['root.path'] . 'views/',
         ));
     }
